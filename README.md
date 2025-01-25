@@ -1,1 +1,5 @@
-# Programowanie-aplikacji-biznesowych-Projekt-2025
+git clone "Link do repozytorium" (kopiuje repozytorium ze strony internetowej na komputer)
+git pull (weryfikuje różnice między repetytorium na kompie a na stronie z repetytorium)
+git add . (dodaje pliki do commita)
+git commit -m "Nazwa commita" (inicjalizuje commita)
+git push (przesyła commita)
