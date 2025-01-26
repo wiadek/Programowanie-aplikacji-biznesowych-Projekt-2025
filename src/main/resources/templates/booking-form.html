@@ -1,10 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Rezerwacja pokoju</title>
 </head>
 <body>
+<h1>Formularz rezerwacji pokoju</h1>
+<form action="#" th:action="@{/book}" th:object="${roomBooking}" method="post">
+  <div>
+    <!-- Zmieniamy etykietę na Imię i Nazwisko -->
+    <label for="fullName">Imię i Nazwisko:</label>
+    <input type="text" id="fullName" th:field="*{fullName}" />
+  </div>
 
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" th:field="*{email}" />
+  </div>
+
+  <div>
+    <label for="bookingDate">Data rezerwacji:</label>
+    <input type="date" id="bookingDate" th:field="*{bookingDate}" />
+  </div>
+
+  <div>
+    <label for="duration">Czas trwania (dni):</label>
+    <input type="number" id="duration" th:field="*{duration}" />
+  </div>
+
+  <button type="submit">Zarezerwuj pokój</button>
+</form>
 </body>
 </html>
