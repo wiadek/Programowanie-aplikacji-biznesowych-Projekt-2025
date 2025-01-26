@@ -33,7 +33,7 @@ public class RoomBookingController {
             return "booking-form";
         }
 
-        roomBookingService.save(roomBooking);
+        roomBookingService.save(roomBooking); // Zapisujemy rezerwację
         model.addAttribute("successMessage", "Rezerwacja została pomyślnie zarejestrowana!");
         return "success";
     }
@@ -41,5 +41,4 @@ public class RoomBookingController {
     @GetMapping("/success")
     public String showSuccessPage() {
         return "success";
-    }
 }
