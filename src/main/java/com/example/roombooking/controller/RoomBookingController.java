@@ -28,7 +28,7 @@ public class RoomBookingController {
     }
 
     @PostMapping("/book")
-    public String bookRoom(@Valid @ModelAttribute("roomBooking") RoomBooking roomBooking, BindingResult bindingResult, Model model {
+    public String bookRoom(@Valid @ModelAttribute("roomBooking") RoomBooking roomBooking, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "booking-form";
         }
