@@ -41,4 +41,5 @@ public class RoomBookingController {
     @GetMapping("/success")
     public String showSuccessPage() {
         return "success";
+    }
 }
