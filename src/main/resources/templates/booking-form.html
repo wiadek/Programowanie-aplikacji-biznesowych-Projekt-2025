@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Rezerwacja pokoju</title>
+  <title>Rezerwacja pokoju</title>
 </head>
 <body>
 <h1>Formularz rezerwacji pokoju</h1>
+
 <form action="#" th:action="@{/book}" th:object="${roomBooking}" method="post">
   <div>
-    <!-- Zmieniamy etykietę na Imię i Nazwisko -->
     <label for="fullName">Imię i Nazwisko:</label>
     <input type="text" id="fullName" th:field="*{fullName}" />
   </div>
