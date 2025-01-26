@@ -33,7 +33,7 @@ public class RoomBookingController {
             return "booking-form";
         }
 
-        roomBookingService.save(roomBooking); // Zapisujemy rezerwację
+        roomBookingService.save(roomBooking);
         model.addAttribute("successMessage", "Rezerwacja została pomyślnie zarejestrowana!");
         return "success";
     }
